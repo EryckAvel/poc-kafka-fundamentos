@@ -1,3 +1,14 @@
 spring:
   application:
-    name: startup
+    name: kafka-fundamentos
+
+  kafka:
+    bootstrap-servers: localhost:9092,localhost:9094,localhost:9095
+    producer:
+      acks: all
+    consumer:
+      auto-offset-reset: earliest
+
+logging:
+  level:
+    org.apache.kafka: OFF
